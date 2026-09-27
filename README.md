@@ -25,6 +25,15 @@ colours).
 3. Name the file `<Model>-v<version>.step` after the saved version, replace the old file in the same folder, and update
    the table above.
 
+## Viewer
+
+[seedhammer-viewer](https://github.com/Gangleri42/seedhammer-viewer) shows every version of these files in 3D. A
+push that changes `seed/` or `hammer/` asks it to rebuild (`.github/workflows/notify-viewer.yml`); each commit that
+adds or changes `<Model>-v<version>.step` becomes a version there. Keep the file names in that pattern.
+
+The workflow needs the secret `VIEWER_DISPATCH_TOKEN`: a fine-grained token with resource owner Gangleri42, access to
+`seedhammer-viewer` only, and repository permission "Contents: read and write".
+
 ## Privacy check
 
 A pre-commit hook rejects local paths, email addresses and Autodesk document ids in staged files, including STEP
