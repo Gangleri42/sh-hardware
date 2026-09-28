@@ -12,7 +12,7 @@ colours).
 
 - Units: the Seed file is in millimetres, the Hammer file in centimetres. Each file declares its unit, so CAD tools
   import both at the right size.
-- The Hammer assembly carries the Seed V3 controller it was designed with, not the V4 in `seed/`.
+- The Hammer file holds the machine only; the Seed controller is its own model in `seed/`.
 - The Seed includes its circuit board with component models.
 - Bought parts (motors, pulleys, connectors, fasteners, the NFC antenna) are modelled for fit. Their designs belong to
   their makers.
