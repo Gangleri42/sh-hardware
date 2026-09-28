@@ -20,10 +20,14 @@ colours).
 ## Updating a model
 
 1. Save the design in Fusion.
-2. Export the root component as STEP. Fusion leaves hidden components out, so show everything that belongs in the model
-   first.
-3. Name the file `<Model>-v<version>.step` after the saved version, replace the old file in the same folder, and update
-   the table above.
+2. Run `ExportToOutbox` (Utilities > Scripts and Add-Ins; add `scripts/fusion/ExportToOutbox` once with "+"). It
+   refuses unsaved designs and hidden geometry, and writes `~/SeedHammer/outbox/<Model>-v<version>.step`.
+3. Run `scripts/publish.py`. For each file in the outbox it checks that the file is complete and newer than the
+   published one, runs the privacy check below, checks that `main` matches `origin/main`, replaces the old file,
+   updates the table above, commits, checks the remote again and pushes. Anything that fails moves the file to
+   `~/SeedHammer/outbox/held` with a `.reason` file, and nothing is pushed.
+
+`scripts/publish.py --dry-run FILE` runs every check without committing.
 
 ## Viewer
 
@@ -36,8 +40,19 @@ The workflow needs the secret `VIEWER_DISPATCH_TOKEN`: a fine-grained token with
 
 ## Privacy check
 
-A pre-commit hook rejects local paths, email addresses and Autodesk document ids in staged files, including STEP
-headers. Enable it once per clone:
+A pre-commit hook rejects local paths, email addresses and Autodesk document ids in staged files. STEP files get a
+stricter check (`scripts/step_privacy.py`): every string and comment in the file, header and data alike, must be generated
+(colours, numbers, Fusion's import stamps) or listed in `privacy/approved-strings.txt`, after Fusion's instance suffixes
+such as ` (1)` and `:3` are removed. A new component name or description holds the file until you approve it:
+
+```sh
+scripts/publish.py approve ~/SeedHammer/outbox/held/<Model>-v<version>.step
+```
+
+That shows the new strings, adds them to the list on "yes" (the list is committed with the model) and queues the file
+again. Paths, addresses, Autodesk ids, URLs and Fusion file names can never be approved.
+
+Enable the hook once per clone:
 
 ```sh
 git config core.hooksPath .githooks

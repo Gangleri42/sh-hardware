@@ -1,0 +1,10 @@
+{
+	"autodeskProduct": "Fusion",
+	"type": "script",
+	"author": "",
+	"description": {
+		"": "Exports the active SeedHammer design as STEP to ~/SeedHammer/outbox for scripts/publish.py."
+	},
+	"supportedOS": "windows|mac",
+	"editEnabled": true
+}
