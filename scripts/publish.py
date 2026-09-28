@@ -125,13 +125,14 @@ def publish(path, dry_run=False):
     try:
         for name in old:
             git('rm', '--quiet', f'{folder}/{name}')
+        os.makedirs(os.path.join(REPO, folder), exist_ok=True)  # git rm removes the folder once it is empty
         with open(os.path.join(REPO, new), 'wb') as f:
             f.write(data)
         update_readme(model, version)
         git('add', new, 'README.md', APPROVED)
         git('commit', '--quiet', '-s', '-m', f'Export the {model} at version {version}', '-m',
             f'Exported from the saved Fusion design {MODELS[model][1]} and published by scripts/publish.py.')
-    except Hold:
+    except Exception:
         # Undo only what this run changed; approvals not yet committed stay in the working tree.
         git('reset', '--quiet')
         git('checkout', 'HEAD', '--', 'README.md', *(f'{folder}/{name}' for name in old))
