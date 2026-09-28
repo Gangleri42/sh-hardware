@@ -25,7 +25,8 @@ colours).
 3. Run `scripts/publish.py`. For each file in the outbox it checks that the file is complete and newer than the
    published one, runs the privacy check below, checks that `main` matches `origin/main`, replaces the old file,
    updates the table above, commits, checks the remote again and pushes. Anything that fails moves the file to
-   `~/SeedHammer/outbox/held` with a `.reason` file, and nothing is pushed.
+   `~/SeedHammer/outbox/held` with a `.reason` file, and nothing is pushed. The header's time stamp is rewritten to UTC, so
+   the file doesn't give away the time zone it was exported in; the privacy check refuses any other time stamp.
 
 `scripts/publish.py --dry-run FILE` runs every check without committing.
 

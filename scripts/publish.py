@@ -12,9 +12,9 @@ outbox/held with a .reason file and a notification; nothing is pushed.
 import fcntl
 import os
 import re
-import shutil
 import subprocess
 import sys
+from datetime import datetime, timezone
 
 import step_privacy
 
@@ -64,9 +64,18 @@ def check_file(path):
     return model, version, [name for _, name in current]
 
 
-def check_privacy(path):
-    with open(path, 'rb') as f:
-        unknown, blocked = step_privacy.scan(f.read(), step_privacy.load_approved())
+def to_utc(data):
+    """Rewrites the header time_stamp to UTC, so the file does not say which time zone it was exported in."""
+    stamp = re.compile(rb"(/\* time_stamp \*/ ')([^']*)(')")
+    m = stamp.search(data, 0, 4000)
+    if not m:
+        raise Hold('The STEP header has no time_stamp.')
+    utc = datetime.fromisoformat(m[2].decode()).astimezone(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+    return data[:m.start(2)] + utc.encode() + data[m.end(2):]
+
+
+def check_privacy(path, data):
+    unknown, blocked = step_privacy.scan(data, step_privacy.load_approved())
     if blocked:
         raise Hold('Blocked text (can never be published; fix it in Fusion):\n' + '\n'.join(
             repr(step_privacy.decode(v)) for v in blocked))
@@ -105,7 +114,9 @@ def update_readme(model, version):
 
 def publish(path, dry_run=False):
     model, version, old = check_file(path)
-    check_privacy(path)
+    with open(path, 'rb') as f:
+        data = to_utc(f.read())
+    check_privacy(path, data)
     remote = check_git()
     if dry_run:
         return f'{os.path.basename(path)} passes every check (dry run, nothing committed).'
@@ -114,7 +125,8 @@ def publish(path, dry_run=False):
     try:
         for name in old:
             git('rm', '--quiet', f'{folder}/{name}')
-        shutil.copyfile(path, os.path.join(REPO, new))
+        with open(os.path.join(REPO, new), 'wb') as f:
+            f.write(data)
         update_readme(model, version)
         git('add', new, 'README.md', APPROVED)
         git('commit', '--quiet', '-s', '-m', f'Export the {model} at version {version}', '-m',

@@ -26,7 +26,7 @@ GENERATED = [
     re.compile(r'[-+0-9. ,;]*'),  # empty, numbers
     re.compile(r'Opaque\(\d{1,3},\d{1,3},\d{1,3}\)'),  # colour names
     re.compile(r'\d{4}-\d\d-\d\d-\d\d-\d\d-\d\d-\d{3}(_\d+)?'),  # names Fusion gives imported bodies
-    re.compile(r'\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d([+-]\d\d:\d\d|Z)?'),  # header time_stamp
+    re.compile(r'\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ'),  # header time_stamp, UTC only (publish.py rewrites it)
     re.compile(r'(Hammer|Seed)-v\d+\.step'),  # header name
 ]
 SUFFIX = re.compile(r'(:\d+| \(\d+\))$')
