@@ -5,8 +5,8 @@ colours).
 
 | File | Model | Source |
 |---|---|---|
-| `hammer/Hammer-v41.step` | SeedHammer engraving machine, complete assembly | Fusion `Hammer_V3P`, version 41 |
-| `seed/Seed-v7.step` | Seed controller, V4 without battery | Fusion `seed_v4`, version 7 |
+| `hammer/Hammer-v50.step` | SeedHammer engraving machine, complete assembly | Fusion `Hammer_V3P`, version 50 |
+| `seed/Seed-v13.step` | Seed controller, V4 without battery | Fusion `seed_v4`, version 13 |
 
 ## Notes
 
