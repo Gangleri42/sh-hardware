@@ -11,10 +11,10 @@ colours).
 
 ## Notes
 
-- Units: the Seed file is in millimetres, the Hammer file in centimetres. Each file declares its unit, so CAD tools
-  import both at the right size.
+- Units: the Seed and II files are in millimetres, the Hammer file in centimetres. Each file declares its unit, so CAD
+  tools import all three at the right size.
 - The Hammer file holds the machine only; the Seed controller is its own model in `seed/`.
-- The Seed includes its circuit board with component models.
+- The Seed includes its circuit board with component models; II includes its mainboard and display.
 - Bought parts (motors, pulleys, connectors, fasteners, the NFC antenna) are modelled for fit. Their designs belong to
   their makers.
 
