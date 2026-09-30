@@ -20,7 +20,7 @@ APPROVED = os.path.join(ROOT, 'privacy', 'approved-strings.txt')
 BLOCK = re.compile(
     r'/Users/|/home/[a-z]|[A-Za-z]:\\|urn:adsk|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|'
     r'nsec1[02-9ac-hj-np-z]{58}|nbunksec1[02-9ac-hj-np-z]{20,}|https?:|file:|\.f3[dz]\b|'
-    r'\d{4}-\d\d-\d\dT\d\d:\d\d(:\d\d)?[+-]\d\d',  # a time stamp with a local offset gives the time zone away
+    r'\d{4}-\d\d-\d\dT\d\d:\d\d(:\d\d(\.\d+)?)?[+-]\d\d',  # a time stamp with a local offset gives the time zone away
     re.I,
 )
 GENERATED = [

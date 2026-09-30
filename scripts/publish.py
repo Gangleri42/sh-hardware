@@ -83,6 +83,15 @@ def to_utc(data):
     return data[:m.start(2)] + utc.encode() + data[m.end(2):]
 
 
+FUSION_SUFFIX = re.compile(rb"'([^'/\\:]*?)\.f3d ((?::\d+| \(\d+\))*)'")  # plain names only, never a path
+
+
+def drop_fusion_suffix(data):
+    """Fusion sometimes names a linked part after its document plus '.f3d ' ('mainboard.f3d :1'), depending on how
+    the reference was loaded. Drops that suffix from names; any other '.f3d' still fails the privacy check."""
+    return FUSION_SUFFIX.sub(rb"'\1\2'", data)
+
+
 def check_privacy(path, data):
     unknown, blocked = step_privacy.scan(data, step_privacy.load_approved())
     if blocked:
@@ -132,7 +141,7 @@ def update_readme(model, version):
 def publish(path, dry_run=False):
     model, version, old = check_file(path)
     with open(path, 'rb') as f:
-        data = to_utc(f.read())
+        data = drop_fusion_suffix(to_utc(f.read()))
     check_privacy(path, data)
     remote = check_git()
     if dry_run:
@@ -202,11 +211,13 @@ def run_outbox():
 
 
 def approve(path):
-    # Approve the text that gets published: the header's time stamp in UTC, never the local one.
+    # Approve the text that gets published: the header's time stamp in UTC, never the local one, and names without
+    # Fusion's '.f3d ' suffix.
     with open(path, 'rb') as f:
-        data = to_utc(f.read())
-    with open(path, 'wb') as f:
+        data = drop_fusion_suffix(to_utc(f.read()))
+    with open(path + '.tmp', 'wb') as f:
         f.write(data)
+    os.replace(path + '.tmp', path)
     if step_privacy.main(['step_privacy.py', 'approve', path]):
         return 1
     publish(path, dry_run=True)  # raises Hold if anything else is still wrong
