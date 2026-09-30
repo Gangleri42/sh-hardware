@@ -157,8 +157,7 @@ def publish(path, dry_run=False):
             f.write(data)
         update_readme(model, version)
         git('add', new, 'README.md', APPROVED)
-        git('commit', '--quiet', '-s', '-m', f'Export the {model} at version {version}', '-m',
-            f'Exported from the saved Fusion design {MODELS[model][1]} and published by scripts/publish.py.')
+        git('commit', '--quiet', '-s', '-m', f'Export the {model} at version {version}')
     except Exception:
         # Undo only what this run changed; approvals not yet committed stay in the working tree.
         git('reset', '--quiet')
