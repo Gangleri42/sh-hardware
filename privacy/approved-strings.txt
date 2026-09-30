@@ -9,13 +9,23 @@
 /* preprocessor_version */
 /* time_stamp */
 3D
+ACME nut block for T8 lead screw, 25 x 34 x 12 mm, POM
+AO_DFN-8-1EP_5.55x5.2mm_P1.27mm_EP4.12x4.6mm
 ASSEMBLY
 AUTOMOTIVE_DESIGN { 1 0 10303 214 3 1 1 }
 Aluminium - eloxiert, gl\X\E4nzend (Grau)
 Aluminium - eloxiert, rau (Rot)
+Aluminium - eloxiert, rau (Schwarz)
+Aluminium - glasperlengestrahlt
+Aluminium - satiniert
 Aluminium, Einfach
 Amass_XT30UPB-M
 Autodesk Translation Framework v15.15.0.0
+BS EN ISO 10511 - M3 Stahl 8 Einfach
+BS EN ISO 10511 - M4 Stahl 8 Einfach
+BS EN ISO 10511 - M5 Stahl 8 Einfach
+Back block of the housing, printed PETG
+Ball bearing 608Z, 8 x 22 x 7 mm
 Beschichtung - br\X\FCniert
 Bracket for the Y motor, screwed to the back end block.
 Brass hub of the clamp lever; the M4 rod screws into its cross hole.
@@ -25,11 +35,17 @@ CAM_glass_sapphire_0p4
 CP_Elec_8x10
 CP_Radial_D13.0mm_P5.00mm
 CP_Radial_D130mm_P500mm
+CQ assembly
 C_0201_0603Metric
 C_0402_1005Metric
 C_0603_1608Metric
 C_1206_3216Metric
+Cable clip for one flat cable, 8 x 3.5 x 2.9 mm, printed PC/PBT
+Cable clip for two flat cables, 8 x 4.8 x 2.9 mm, printed PC/PBT
+Cable clip with M3 snap plug, 8 x 4.8 x 2.9 mm, printed PC/PBT
+Chrom
 Chrom - Schwarz
+Clamp lever (cam), 12.5 mm, printed ASA
 Clamp lever (printed) on the hub.
 Compression spring, 15 / 0.5 / 5 mm (length / wire / OD), spring steel
 Core Data for Automotive Mechanical Design Process
@@ -38,38 +54,62 @@ Crystal_SMD_3225-4Pin_3.2x2.5mm
 Ctrl Pts
 DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm
 DFN-8-1EP_3x3mm_Pitch0.65mm
+DFN-8-1EP_6x5mm_P1.27mm_EP4x4mm
+DFN-8-1EP_6x5mm_Pitch1.27mm
 DIN 6924 - M3 x 0.5 Stahl 6 Einfach
 DIN 6924 - M4 x 0.7 Stahl 6 Einfach
 DIN 6924 - M5 x 0.8 Stahl 6 Einfach
+DIN 912 - M3 x 0.5 x 12 Stahl 12.9 Schwarz
 DIN 912 - M3 x 0.5 x 12 Stahl 4.6 Einfach
 DIN 912 - M3 x 0.5 x 16 Stahl 4.6 Einfach
 DIN 912 - M3 x 0.5 x 20 Stahl 4.6 Einfach
 DIN 912 - M3 x 0.5 x 25 Stahl 4.6 Einfach
+DIN 912 - M3 x 0.5 x 30 Stahl 12.9 Schwarz
+DIN 912 - M4 x 0.7 x 20 Stahl 12.9 Schwarz
 DIN 914 - M5 x 8 Stahl 4.6 Einfach
+DIN EN ISO 10642 - M4 x 25 Stahl 10.9 Schwarz
+DIN EN ISO 10642 - M5 x 30 Stahl 10.9 Schwarz
+DIN EN ISO 10642 - M5 x 30 Stahl 10.9 Schwarz_1
 DISTANCE_ACCURACY_VALUE
 DRT_3
 D_SOD-323
 D_SOD-523
 D_SOD_523
+Display ER-TFT035-6
+Display flex cable (FPC), polyimide
 EPX 86FR (mit Carbon-3D-Druckern M2, M3, L1)
 Edelstahl - geb\X\FCrstet, gerade, lang
+Engraving needle, 3 x 17.5 mm, 90 deg point, tungsten carbide
+Engraving plate, 85 x 85 x 3 mm, r5 corners, stainless steel 316L
 Espressif_QFN-104-1EP_10x10mm_P0.35mm_EP7.5x7.5mm
 FH34SRJ-24S-0.5SH
 FPC_camera_v4
+Faceplate with NFC logo inlay, printed PETG
+Foot, 8 x 20 x 5 mm, TPU 85A
 Front and back end blocks (front = mirror of back): Y rod bosses with set screws, M5 nut slots for the side plate screws, Y drive mounting holes, feet.
+Front block of the housing, printed PETG
 GT2 16T timing pulley for 6 mm belt: 5 mm bore, hub 13 x 6, 7 mm belt zone (16 grooves, OD 9.678, pitch 10.186), flange 13 x 1.
 GT2 16T toothed idler for 6 mm belt: 3 mm bore (M3 axle), flanges 13 x 1 on both sides, 7 mm belt zone (16 grooves, OD 9.678).
+GT2 Timing Pulley 30 Tooth 5mm
+GT2 Timing Pulley 30 Tooth 8mm
 GT2 belt clamp plate (two stacked on the sled, belt in between).
 Gewindestift DIN 914 - M5 x 8
 Gewindestift DIN 914 - M5 x 8 Stahl 4.6 Einfach
 Glas (klar)
 Glas - dunkle Farbe
+Gummi - hart
 Gummi - weich
 HTSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP3.4x6.5mm
+Hammer solenoid cable, twisted pair, UL1007
+Hammer unit: coil housing, retainer, top cap
 Hammer_V3P
+Headsled (X carriage), CNC aluminium 7075, black anodized
+Hirose_FH12-50S-0.5SH_1x50-1MP_P0.50mm_Horizontal
+Hirose_FH12_xxS_0_5SH_Parametric_v0_1
 Hirose_FH26-31S-0.3SHW_2Rows-31Pins-1MP_P0.60mm_Horizontal
 Hirose_FH26_xxS_0_3SHW_2Rows_xxPins_1MP_P0_60mm_Horizontal_Parametric
 ISO 10642 - M4 x 20 Stahl 8.8 Einfach
+ISO 10642 - M5 x 20 Stahl 10.9 Schwarz
 ISO 10642 - M5 x 30 Stahl 8.8 Einfach
 ISO 14581 - M2x6 Aluminium Einfach
 Innensechskantschraube DIN 912 - M3 x 0.5 x 12
@@ -80,27 +120,69 @@ Innensechskantschraube DIN 912 - M3 x 0.5 x 20
 Innensechskantschraube DIN 912 - M3 x 0.5 x 20 Stahl 4.6 Einfach
 Innensechskantschraube DIN 912 - M3 x 0.5 x 25
 Innensechskantschraube DIN 912 - M3 x 0.5 x 25 Stahl 4.6 Einfach
+Innensechskantschraube DIN 912 - M3 x 0.5 x 30
+Innensechskantschraube DIN 912 - M4 x 0.7 x 20
 JST_B2B_XH_A
 JST_B4B_XH_A
 JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal
 JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical
 JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical
 K\X\F6rper1
+K\X\F6rper10
+K\X\F6rper11
+K\X\F6rper12
+K\X\F6rper13
+K\X\F6rper14
+K\X\F6rper15
+K\X\F6rper16
+K\X\F6rper17
+K\X\F6rper18
+K\X\F6rper19
 K\X\F6rper2
+K\X\F6rper20
+K\X\F6rper21
+K\X\F6rper22
+K\X\F6rper23
+K\X\F6rper24
+K\X\F6rper25
+K\X\F6rper26
+K\X\F6rper27
+K\X\F6rper28
+K\X\F6rper29
 K\X\F6rper3
+K\X\F6rper30
+K\X\F6rper31
+K\X\F6rper32
+K\X\F6rper33
+K\X\F6rper34
+K\X\F6rper35
+K\X\F6rper36
+K\X\F6rper4
 K\X\F6rper5
 K\X\F6rper6
+K\X\F6rper7
+K\X\F6rper8
+K\X\F6rper9
 KiCad electronic assembly
 Knurled knob (printed) on the M4 rod behind the jaw, with an M4 lock nut inside.
+Knurled nut with M4 lock nut pocket, printed PETG
+Kunststoff - gl\X\E4nzend (Schwarz)
 Kunststoff - gl\X\E4nzend (Wei\X\DF)
 Kunststoff - matt (Grau)
 Kunststoff - matt (Schwarz)
+Kupfer - poliert
+L13 gray
 LCM_HX0242S008
 LED_0603_1608Metric
+L_0603_1608Metric
 L_0805_2012Metric
+L_APV_ANR3012
 L_Abracon_ASPI-0425
 Left and right side plates, modelled in machine coordinates (origin = layout machine_origin).
+Left side panel with X tower, printed PETG
+Lever hub with M4 cross thread, 12 x 12.5 mm, brass
 LinearPattern003
+Lock Collar 8mm
 M4 threaded rod from the lever hub through the holder and the jaw into the knob. Length follows plate_h.
 Maximum model space distance between geometric entities at asserted connectivities
 Messing - poliert
@@ -112,53 +194,84 @@ NFC_springs_BW0041CG
 NONE
 Nema 17 Stepper Motor
 None
+Nylon 6-6 (Wei\X\DF)
 Origin
+PCB clip, printed PETG
+PCB split pin, printed PETG
 Panasonic_EVQPUL_EVQPUC
+Plate holder (Y sled, upper half), printed PETG
 Plate holder (printed): pocket for the front half of the plate with an undercut lip, dovetail channel for the jaw, lever hub notch, M4 rod channel. Grows with plate_w, plate_h and y_rod_pitch.
+Plate jaw, printed PETG
+Plug JST XHP-2, nylon
+Plug JST XHP-4, nylon
 Polyimid (Kapton)
+QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm
 QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm
 QFN-28-1EP_5x5mm_Pitch0.5mm
+QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm
+QFN-32-1EP_5x5mm_Pitch0.5mm
 QFN-56-1EP_7x7mm_P0.4mm_EP5.6x5.6mm
 QFN-56-1EP_7x7mm_Pitch0.4mm
 RP2350_QFN60
+RP2350_QFN80
 R_0201_0603Metric
 R_0402_1005Metric
 R_0603_1608Metric
+R_0805_2012Metric
 R_1206_3216Metric
 R_2010_5025Metric
+Right side panel with X tower, printed PETG
+SH2_P
+SOIC-8_5.3x5.3mm_P1.27mm
 SOT-23
 SOT-23-5
+SOT-23-6
 SOT-323_SC-70
 SOT-563
 SOT-583-8
 SOT_563
 SRR
 ST-DEVELOPER v20.2
+Schwarz
 Sechskantmutter DIN 6924 - M3 x 0.5
 Sechskantmutter DIN 6924 - M3 x 0.5 Stahl 6 Einfach
 Sechskantmutter DIN 6924 - M4 x 0.7
 Sechskantmutter DIN 6924 - M4 x 0.7 Stahl 6 Einfach
 Sechskantmutter DIN 6924 - M5 x 0.8
 Sechskantmutter DIN 6924 - M5 x 0.8 Stahl 6 Einfach
+Sechskantmutter mit Sicherungselement, niedrige Form BS EN ISO 10511 - M3
+Sechskantmutter mit Sicherungselement, niedrige Form BS EN ISO 10511 - M4
+Sechskantmutter mit Sicherungselement, niedrige Form BS EN ISO 10511 - M5
 Seed - Lens glass
 Seed - Lens pupil
 Seed - OLED black
 SeedHammer steel plate SH02 (engraving template embossed). Size follows plate_w x plate_h, centred.
+Senkkopfschraube mit Innensechskant DIN EN ISO 10642 - M4 x 25
+Senkkopfschraube mit Innensechskant DIN EN ISO 10642 - M5 x 30
 Senkkopfschraube mit Innensechskant ISO 10642 - M4 x 20
 Senkkopfschraube mit Innensechskant ISO 10642 - M4 x 20 Stahl 8.8 Einfach
+Senkkopfschraube mit Innensechskant ISO 10642 - M5 x 20
 Senkkopfschraube mit Innensechskant ISO 10642 - M5 x 30
 Senkkopfschraube mit Innensechskant ISO 10642 - M5 x 30 Stahl 8.8 Einfach
 Senkkopfschraube mit Innensechsrund ISO 14581 - M2x5 Aluminium Einfach
 Senkkopfschraube mit Innensechsrund ISO 14581 - M2x6
 Skeleton
+Sliding bushing SF-1, 12 x 14 x 20 mm, bronze composite
+Sliding bushing SF-1, 12 x 14 x 25 mm, bronze composite
 Sliding jaw (printed) in the plate holder dovetail: undercut pocket for the back half of the plate, pulled forward by the M4 rod. Width follows plate_w, position follows the plate back edge.
+Spring washer 8 x 0.2 mm, spring steel
 Stahl
+Stahl - galvanisiert (klein)
 Stahl - satiniert
+Stahl 10.9, Schwarz
+Stahl 12.9, Schwarz
 Stahl 4.6, Einfach
 Stahl 6, Einfach
+Stahl 8, Einfach
 Stahl 8.8, Einfach
 Static Y drive: Y rods, motor mount, Y motor and pulley, idler block and pulley, Y belt.
 Static frame: side plates, X rods, handle bars, end blocks, X rod clamps.
+Stepper motor connector JST PH 6-pin, nylon
 TC-33X-1_SUBSTR_ASM.stp
 TC-33X-2
 TC-33X-2.stp
@@ -166,14 +279,19 @@ TC33_SUBST1.stp
 TSOT-23-6
 Texas_DRT-3
 Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm
+Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm
 Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm
 The two X rods (steel), held in the side plates, 7 mm deep each side.
 The two Y rods (steel), held in the end blocks, centred front to back.
 The two wooden handle bars between the side plates, screwed from outside.
+Threaded rod M4 x 125 mm, DIN 976, steel, zinc plated
 UQFN-12-1EP_2x2mm_P0.4mm_EP1.1x1.1mm
 USB4115-03-C
 USB4510-03-1-A
 USB4510-03-1-A_PART1
+USB_C_Receptacle_16P_TopMnt_Horizontal_GCT_USB4105-xx-A
+USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal
+VSSOP-8_2.3x2mm_P0.5mm
 WDFN-8-1EP_6x5mm_P1.27mm_EP3.4x4mm
 WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm
 WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm
@@ -181,45 +299,83 @@ WSON_8_1EP_2x2mm_P05mm_EP09x16mm
 X belt, the fixed part: ends clamped in the x_rod_clamps tooth profile and the straight runs to the idlers, drawn for x_head (they meet x_belt_loop when the x_travel slider reads 0).
 X belt, the part that rides with the head: around idler 1, over the GT2 20T motor pulley, around idler 2. Steel-reinforced GT2, 2.0 thick (teeth 0.75), 6 tall. The runs to the clamps are x_belt_runs in frame.
 X carriage plate: rod block with two bronze-bushed bores (grows with the rod), motor section with NEMA 17 slots, hammer bore, belt idlers. Origin on the top face at the hammer axis.
+X drive belt, GT2 6 mm, closed loop
+X guide rod, 12 x 200 mm, stainless steel 1.4301
+X lead screw T8 (lead 8, 2 starts), 8 x 200 mm, stainless steel 1.4301
+X motor cable, 4 leads UL1007 24 AWG, JST PHR-6 to XHP-4
+X motor holder (NEMA 17), printed ASA
+X motor holder lid, printed ASA
 X rod clamps: one block per side plate holding both X rods (slit + M3 squeeze screw per rod), M5 screw to the side plate, GT2 belt-end clamp with teeth. Right clamp = mirror at the machine centre. Origin on the left side plate inner face, centred between the rods.
 XT30UPB-M
 Y belt, the fixed part: from the upper y_belt_clamp channel over the T16 motor pulley, back along the bottom, around the T16 idler and up to the lower channel. Open steel-reinforced GT2, 2.0 x 6; the ends in the clamp are y_belt_ends (y_carriage). Drawn for y_head.
 Y belt, the two ends that ride with the sled: stacked in the two y_belt_clamp channels (teeth down in the GT2 tooth floor), upper end to the motor, lower end to the idler. Steel-reinforced GT2, 2.0 x 6.
+Y drive belt, GT2 6 mm, closed loop
+Y guide rod, 12 x 200 mm, stainless steel 1.4301
 Y idler block (FDM): holds the T16 idler on an M3 axle between two 6 mm cheeks (gap 9.5 = idler 9 + 0.5; M3 clearance 3.2 left, 2.8 thread-forming right). Bolted to the front end block by two M4 countersunk screws into captive nuts (7 AF pockets, 5.5 deep). Narrowed from the GT2 30T gap of 17.5.
+Y lead screw T8 (lead 8, 2 starts), 8 x 200 mm, stainless steel 1.4301
+Y motor cable, board side, 4 leads UL1007 24 AWG
+Y motor cable, motor side, 4 leads UL1007 24 AWG
+Y motor holder and belt housing (NEMA 17), printed ASA
+Y sled, lower half, printed PETG
 Y sled: two bearing blocks on the Y rods (left = mirror of right) with bronze bushing pockets; belt clamp bracket on the left block; carries the plate holder.
+a4dc038a-92ba-11ed-bd60-83025610b399
+a4dc038b-92ba-11ed-bd60-83025610b399
+a4dc038b-92ba-11ed-bd60-83025610b399_part
+a4dc038c-92ba-11ed-bd60-83025610b399
+a4dc038c-92ba-11ed-bd60-83025610b399_part
+a4dc038d-92ba-11ed-bd60-83025610b399
+a4dc038d-92ba-11ed-bd60-83025610b399_part
+acme_nut
+active_area
+adhesive
 armature
 automotive_design
 axis
+back
 back_plate
+bearing_608z
 bobbin
 body
+bushing_1220
+bushing_1225
 bushing_back
 bushing_front
+cable_clip_1x
+cable_clip_2x
+cable_clip_m3
 cam_flex_neck
 cam_flex_stiffened_end
 cam_glass
 camera_body
 carriage_plate
 center_axis
+centerpiece_lever
 clamp_knob
 clamp_lever
 clamp_lever_hub
 clamp_rod_M4
+clampsled
+coil_housing
 coil_layer_1
 coil_layer_2
 coil_layer_3
 coil_layer_4
 coil_layer_5
 core_tube
+cover
 cover_glass
 density
 density measure
 density of part
 design
+display
+display_fpc
 electronics
 end_block_back
 end_block_front
 end_blocks
+faceplate
+flex
 foot
 fpc_driver_ic
 fpc_fold
@@ -230,42 +386,83 @@ fpc_parts_1p4max
 fpc_stiffener_steel
 fpc_wide
 frame
+front
 fxr_ferrite_cover
 fxr_fpc_adhesive
 fxr_pad_1
 fxr_pad_2
+grommet
 gt2_16t_idler_3mm
 gt2_16t_pulley_5mm
 hammer_bobbin
+hammer_cable
 hammer_coil
 hammer_core_tube
 hammer_housing_mid
 hammer_housing_top
 hammer_needle
 hammer_nose
+hammerhead
 handle_bar_back
 handle_bar_front
 handle_bars
+housing
 housing_mid
 housing_top
 international standard
+iso10511_m3
+iso10511_m3_insert
+iso10511_m4
+iso10511_m4_insert
+iso10511_m5
+iso10511_m5_insert
+iso10642_m4x25
+iso10642_m5x16
+iso10642_m5x20
+iso10642_m5x30
+iso4762_m3x12
+iso4762_m3x30
+iso4762_m4x16
+jaw
 jaw_spring
+knurled_nut
+layout
+lead_1
+lead_2
+lead_3
+lead_4
+left
 lens
 lens_dome
 lens_flange
 lens_pupil
+lever
 lock
+lock_collar
+m4_threaded_rod
+mainboard
+mainboard_PCB
 material name
 material property
 mechanical
+module
+motor_connector
 muscle5
 muscle6
 muscle_export_PCB
 needle
+nfc_logo_1
+nfc_logo_2
+nfc_logo_3
+nfc_logo_4
+nfc_logo_5
+nfc_logo_6
 nose
 oca
 panel
 part definition
+pcb_clip
+pimple
 pins
 plate
 plate_holder
@@ -275,10 +472,15 @@ plunger_rod
 plunger_spring
 plunger_washer_lower
 plunger_washer_upper
+pulley_30t_5mm
+pulley_30t_8mm
 ref_axis
 refdir
+retainer
 return_spring
+right
 rod
+rp2350text
 seed_PCB
 seed_v4
 seed_v4_pcb_r3
@@ -287,30 +489,49 @@ side_plate_right
 side_plates
 sled_block_left
 sled_block_right
+sled_bottom
+sled_top
 spring_1
 spring_2
+spring_washer_8
+stiffener
 tc-33x-2
+top_cap
+touch_flex
+touch_glass
+touch_ic
+touch_stiffener
 tp_fold
 tp_strip
 tp_strip_on_wide
 v4_fpc_tail_S
 v4_fpc_tail_stiffener
+view_area
 washer_lower
 washer_upper
+x_axis
+x_belt
 x_belt_loop
 x_belt_run_left
 x_belt_run_right
 x_belt_runs
 x_carriage
 x_carriage_plate
+x_house
 x_idler_left
 x_idler_right
+x_motor_cable
+x_motor_holder
+x_rod
 x_rod_back
 x_rod_clamp_left
 x_rod_clamp_right
 x_rod_clamps
 x_rod_front
 x_rods
+x_spindle
+xh_plug_2
+xh_plug_4
 y_axis
 y_belt
 y_belt_clamp
@@ -319,8 +540,13 @@ y_belt_end_upper
 y_belt_ends
 y_carriage
 y_idler_block
+y_motor_cable
+y_motor_cable_deck
+y_motor_holder
 y_motor_mount
+y_rod
 y_rod_left
 y_rod_right
 y_rods
 y_sled
+y_spindle
