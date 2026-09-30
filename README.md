@@ -1,11 +1,11 @@
 # SeedHammer hardware
 
-CAD models of the SeedHammer engraving machine and its Seed controller, exported from Fusion as STEP (AP214, with
+CAD models of the Seed controller and the Hammer and II engraving machines, exported from Fusion as STEP (AP214, with
 colours).
 
 | File | Model | Source |
 |---|---|---|
-| `hammer/Hammer-v50.step` | SeedHammer engraving machine, complete assembly | Fusion `Hammer_V3P`, version 50 |
+| `hammer/Hammer-v50.step` | Hammer engraving machine, complete assembly | Fusion `Hammer_V3P`, version 50 |
 | `seed/Seed-v15.step` | Seed controller, V4 without battery | Fusion `seed_v4`, version 15 |
 
 ## Notes
@@ -33,8 +33,8 @@ colours).
 ## Viewer
 
 [seedhammer-viewer](https://github.com/Gangleri42/seedhammer-viewer) shows every version of these files in 3D. A
-push that changes `seed/` or `hammer/` asks it to rebuild (`.github/workflows/notify-viewer.yml`); each commit that
-adds or changes `<Model>-v<version>.step` becomes a version there. Keep the file names in that pattern.
+push that changes `seed/`, `hammer/` or `II/` asks it to rebuild (`.github/workflows/notify-viewer.yml`); each commit
+that adds or changes `<Model>-v<version>.step` becomes a version there. Keep the file names in that pattern.
 
 The workflow needs the secret `VIEWER_DISPATCH_TOKEN`: a fine-grained token with resource owner Gangleri42, access to
 `seedhammer-viewer` only, and repository permission "Contents: read and write".

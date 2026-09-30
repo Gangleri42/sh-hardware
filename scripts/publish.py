@@ -22,10 +22,18 @@ REPO = step_privacy.ROOT
 HOME = os.path.expanduser('~/SeedHammer')
 OUTBOX = os.path.join(HOME, 'outbox')
 HELD = os.path.join(OUTBOX, 'held')
-MODELS = {'Hammer': ('hammer', 'Hammer_V3P'), 'Seed': ('seed', 'seed_v4')}
-NAME = re.compile(r'(Hammer|Seed)-v(\d+)\.step')
+# Model: (folder, Fusion design, README description for its first row). The models are also listed in
+# ExportToOutbox.py, step_privacy.py (header name) and .github/workflows/notify-viewer.yml.
+MODELS = {
+    'Hammer': ('hammer', 'Hammer_V3P', 'Hammer engraving machine, complete assembly'),
+    'Seed': ('seed', 'seed_v4', 'Seed controller, V4 without battery'),
+    'II': ('II', 'SH2_P', 'II engraving machine, complete assembly'),
+}
+NAME = re.compile(rf'({"|".join(MODELS)})-v(\d+)\.step')
 APPROVED = os.path.relpath(step_privacy.APPROVED, REPO)
-ENV = dict(os.environ, GIT_SSH_COMMAND='ssh -o BatchMode=yes', PATH='/opt/homebrew/bin:' + os.environ.get('PATH', ''))
+# TZ=UTC: commit dates in UTC, like the STEP time stamp.
+ENV = dict(os.environ, GIT_SSH_COMMAND='ssh -o BatchMode=yes', TZ='UTC',
+           PATH='/opt/homebrew/bin:' + os.environ.get('PATH', ''))
 
 
 class Hold(Exception):
@@ -51,14 +59,15 @@ def log(message):
 def check_file(path):
     m = NAME.fullmatch(os.path.basename(path))
     if not m:
-        raise Hold('The name must be Hammer-v<n>.step or Seed-v<n>.step.')
+        raise Hold('The name must be ' + ' or '.join(f'{name}-v<n>.step' for name in MODELS) + '.')
     model, version = m[1], int(m[2])
     with open(path, 'rb') as f:
         f.seek(max(0, os.path.getsize(path) - 64))
         if not f.read().rstrip().endswith(b'END-ISO-10303-21;'):
             raise Hold('The file is incomplete (no END-ISO-10303-21).')
     folder = os.path.join(REPO, MODELS[model][0])
-    current = [(int(n[2]), n[0]) for n in map(NAME.fullmatch, os.listdir(folder)) if n and n[1] == model]
+    names = os.listdir(folder) if os.path.isdir(folder) else []  # no folder yet: the model's first version
+    current = [(int(n[2]), n[0]) for n in map(NAME.fullmatch, names) if n and n[1] == model]
     if current and version <= max(current)[0]:
         raise Hold(f'Version {version} is not newer than the published {max(current)[1]}.')
     return model, version, [name for _, name in current]
@@ -100,12 +109,20 @@ def check_git():
 
 
 def update_readme(model, version):
-    folder, doc = MODELS[model]
+    folder, doc, description = MODELS[model]
     path = os.path.join(REPO, 'README.md')
     with open(path, encoding='utf-8') as f:
         text = f.read()
     row = re.compile(rf'^(\| `{folder}/{model}-v)\d+(\.step` \|.*\| Fusion `{doc}`, version )\d+( \|)$', re.M)
     text, count = row.subn(rf'\g<1>{version}\g<2>{version}\g<3>', text)
+    if count == 0 and f'`{folder}/{model}-v' not in text:
+        # The model's first version: add its row after the last one of the table.
+        rows = list(re.finditer(r'^\| `[^`]+-v\d+\.step` \|.*\|$', text, re.M))
+        if rows:
+            end = rows[-1].end()
+            new_row = f'| `{folder}/{model}-v{version}.step` | {description} | Fusion `{doc}`, version {version} |'
+            text = f'{text[:end]}\n{new_row}{text[end:]}'
+            count = 1
     if count != 1:
         raise Hold(f'Could not find the {model} row in the README table.')
     with open(path, 'w', encoding='utf-8') as f:
@@ -122,6 +139,7 @@ def publish(path, dry_run=False):
         return f'{os.path.basename(path)} passes every check (dry run, nothing committed).'
     folder = MODELS[model][0]
     new = f'{folder}/{os.path.basename(path)}'
+    new_folder = not os.path.isdir(os.path.join(REPO, folder))
     try:
         for name in old:
             git('rm', '--quiet', f'{folder}/{name}')
@@ -138,6 +156,9 @@ def publish(path, dry_run=False):
         git('checkout', 'HEAD', '--', 'README.md', *(f'{folder}/{name}' for name in old))
         if os.path.exists(os.path.join(REPO, new)):
             os.remove(os.path.join(REPO, new))
+        folder_path = os.path.join(REPO, folder)
+        if new_folder and os.path.isdir(folder_path) and not os.listdir(folder_path):
+            os.rmdir(folder_path)  # this run created it
         raise
     os.remove(path)
     commit = git('rev-parse', '--short', 'HEAD')

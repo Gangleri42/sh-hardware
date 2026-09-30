@@ -4,7 +4,7 @@ name: Rebuild the viewer
 on:
   push:
     branches: [main]
-    paths: ['seed/**', 'hammer/**']
+    paths: ['seed/**', 'hammer/**', 'II/**']
   workflow_dispatch:
 
 jobs:

@@ -1,23 +1,30 @@
 # Exports the active SeedHammer design as STEP to ~/SeedHammer/outbox, where scripts/publish.py picks it up.
 # Refuses unsaved designs (the file is named after the saved version) and designs with hidden geometry (Fusion leaves
-# hidden components and bodies out of the STEP).
+# hidden components and bodies out of the STEP). Hidden wire bodies don't count: they have no faces, so a STEP carries
+# nothing of them anyway (e.g. the helper paths the spring sweeps follow).
 import adsk.core, adsk.fusion, os, traceback
 
-MODELS = {'Hammer_V3P': 'Hammer', 'seed_v4': 'Seed'}
+MODELS = {'Hammer_V3P': 'Hammer', 'seed_v4': 'Seed', 'SH2_P': 'II'}
 OUTBOX = os.path.expanduser('~/SeedHammer/outbox')
 
 
 def hidden_geometry(design):
-    found = [b.name for b in design.rootComponent.bRepBodies if not b.isVisible]
+    def with_faces(bodies):
+        return [b for b in bodies if b.faces.count]
+
+    def hidden(bodies):
+        return [b for b in with_faces(bodies) if not b.isVisible]
+
+    found = [b.name for b in hidden(design.rootComponent.bRepBodies)]
     for o in design.rootComponent.allOccurrences:
         parent = o.assemblyContext
         if not o.isVisible:
             # Report the topmost hidden occurrence that has geometry; its children are hidden with it.
-            has_bodies = o.bRepBodies.count or any(c.bRepBodies.count for c in o.component.allOccurrences)
+            has_bodies = with_faces(o.bRepBodies) or any(with_faces(c.bRepBodies) for c in o.component.allOccurrences)
             if has_bodies and (parent is None or parent.isVisible):
                 found.append(o.fullPathName)
             continue
-        found += [f'{o.fullPathName}/{b.name}' for b in o.bRepBodies if not b.isVisible]
+        found += [f'{o.fullPathName}/{b.name}' for b in hidden(o.bRepBodies)]
     return found
 
 
