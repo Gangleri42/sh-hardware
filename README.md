@@ -5,7 +5,7 @@ colours).
 
 | File | Model | Source |
 |---|---|---|
-| `hammer/Hammer-v50.step` | Hammer engraving machine, complete assembly | Fusion `Hammer_V3P`, version 50 |
+| `hammer/Hammer-v55.step` | Hammer engraving machine, complete assembly | Fusion `Hammer_V3P`, version 55 |
 | `seed/Seed-v15.step` | Seed controller, V4 without battery | Fusion `seed_v4`, version 15 |
 
 ## Notes

@@ -31,6 +31,7 @@ C_0603_1608Metric
 C_1206_3216Metric
 Chrom - Schwarz
 Clamp lever (printed) on the hub.
+Compression spring, 15 / 0.5 / 5 mm (length / wire / OD), spring steel
 Core Data for Automotive Mechanical Design Process
 Crystal_SMD_2016-4Pin_2.0x1.6mm
 Crystal_SMD_3225-4Pin_3.2x2.5mm
@@ -127,6 +128,7 @@ R_1206_3216Metric
 R_2010_5025Metric
 SOT-23
 SOT-23-5
+SOT-323_SC-70
 SOT-563
 SOT-583-8
 SOT_563
@@ -247,6 +249,7 @@ handle_bars
 housing_mid
 housing_top
 international standard
+jaw_spring
 lens
 lens_dome
 lens_flange
@@ -256,6 +259,7 @@ material name
 material property
 mechanical
 muscle5
+muscle6
 muscle_export_PCB
 needle
 nose
