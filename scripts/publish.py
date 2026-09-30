@@ -202,6 +202,11 @@ def run_outbox():
 
 
 def approve(path):
+    # Approve the text that gets published: the header's time stamp in UTC, never the local one.
+    with open(path, 'rb') as f:
+        data = to_utc(f.read())
+    with open(path, 'wb') as f:
+        f.write(data)
     if step_privacy.main(['step_privacy.py', 'approve', path]):
         return 1
     publish(path, dry_run=True)  # raises Hold if anything else is still wrong
