@@ -27,7 +27,6 @@ Ball bearing 608Z, 8 x 22 x 7 mm
 Beschichtung - br\X\FCniert
 Bracket for the Y motor, screwed to the back end block.
 Brass hub of the clamp lever; the M4 rod screws into its cross hole.
-Bronze - Patina
 CAM_OV7251_640x480
 CAM_glass_sapphire_0p4
 CAX_DC-0112-10A-AU-2.0
@@ -170,6 +169,7 @@ K\X\F6rper9
 KiCad electronic assembly
 Knurled knob (printed) on the M4 rod behind the jaw, with an M4 lock nut inside.
 Knurled nut with M4 lock nut pocket, printed PETG
+Kunststoff - gl\X\E4nzend (Gelb)
 Kunststoff - gl\X\E4nzend (Schwarz)
 Kunststoff - gl\X\E4nzend (Wei\X\DF)
 Kunststoff - matt (Grau)
@@ -298,7 +298,7 @@ WDFN-8-1EP_6x5mm_P1.27mm_EP3.4x4mm
 WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm
 X belt, the fixed part: ends clamped in the x_rod_clamps tooth profile and the straight runs to the idlers, drawn for x_head (they meet x_belt_loop when the x_travel slider reads 0).
 X belt, the part that rides with the head: around idler 1, over the GT2 20T motor pulley, around idler 2. Steel-reinforced GT2, 2.0 thick (teeth 0.75), 6 tall. The runs to the clamps are x_belt_runs in frame.
-X carriage plate: rod block with two bronze-bushed bores (grows with the rod), motor section with NEMA 17 slots, hammer bore, belt idlers. Origin on the top face at the hammer axis.
+X carriage plate: rod block with two rod bores, a sliding bushing 8 x 10 x 11.8 pressed into each end (grows with the rod), motor section with NEMA 17 slots, hammer bore, belt idlers. Origin on the top face at the hammer axis.
 X drive belt, GT2 6 mm, closed loop
 X guide rod, 12 x 200 mm, stainless steel 1.4301
 X lead screw T8 (lead 8, 2 starts), 8 x 200 mm, stainless steel 1.4301
@@ -316,7 +316,7 @@ Y motor cable, board side, 4 leads UL1007 24 AWG
 Y motor cable, motor side, 4 leads UL1007 24 AWG
 Y motor holder and belt housing (NEMA 17), printed ASA
 Y sled, lower half, printed PETG
-Y sled: two bearing blocks on the Y rods (left = mirror of right) with bronze bushing pockets; belt clamp bracket on the left block; carries the plate holder.
+Y sled: two bearing blocks on the Y rods (left = mirror of right), each with two sliding bushings 8 x 10 x 11.8 (plastic liner in a copper sleeve); belt clamp bracket on the left block; carries the plate holder.
 a4dc038a-92ba-11ed-bd60-83025610b399
 a4dc038b-92ba-11ed-bd60-83025610b399
 a4dc038b-92ba-11ed-bd60-83025610b399_part
@@ -337,8 +337,14 @@ bobbin
 body
 bushing_1220
 bushing_1225
-bushing_back
-bushing_front
+bushing_back_left
+bushing_back_right
+bushing_front_left
+bushing_front_right
+bushing_left_back
+bushing_left_front
+bushing_right_back
+bushing_right_front
 cable_clip_1x
 cable_clip_2x
 cable_clip_m3
