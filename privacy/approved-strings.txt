@@ -96,7 +96,6 @@ GT2 belt clamp plate (two stacked on the sled, belt in between).
 Gewindestift DIN 914 - M5 x 8
 Gewindestift DIN 914 - M5 x 8 Stahl 4.6 Einfach
 Glas (klar)
-Glas - dunkle Farbe
 Gummi - hart
 Gummi - weich
 HTSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP3.4x6.5mm
@@ -223,7 +222,6 @@ R_2010_5025Metric
 Right side panel with X tower, printed PETG
 SH2_P
 SOIC-8_5.3x5.3mm_P1.27mm
-SOT-23
 SOT-23-5
 SOT-23-6
 SOT-323_SC-70
@@ -447,7 +445,6 @@ material property
 mechanical
 module
 motor_connector
-muscle5
 muscle6
 muscle_export_PCB
 needle
