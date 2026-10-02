@@ -4,7 +4,7 @@ CAD models of the Seed controller and the Hammer and II engraving machines as ST
 
 | File | Model | Source |
 |---|---|---|
-| `hammer/Hammer-v59.step` | Hammer engraving machine, complete assembly | Fusion `Hammer_V3P`, version 59 |
+| `hammer/Hammer-v61.step` | Hammer engraving machine, complete assembly | Fusion `Hammer_V3P`, version 61 |
 | `seed/Seed-v15.step` | Seed controller, V4 without battery | Fusion `seed_v4`, version 15 |
 | `II/II-v72.step` | II engraving machine, complete assembly | Fusion `SH2_P`, version 72 |
 
