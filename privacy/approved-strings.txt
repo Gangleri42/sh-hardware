@@ -101,6 +101,7 @@ Gummi - weich
 HRO_TYPE-C-31-D-15C
 HRO_TYPE_C_31_D_15C
 HTSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP3.4x6.5mm
+HTSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP3.4x9.5mm
 Hammer solenoid cable, twisted pair, UL1007
 Hammer unit: coil housing, retainer, top cap
 Hammer_V3P
@@ -125,9 +126,11 @@ Innensechskantschraube DIN 912 - M3 x 0.5 x 30
 Innensechskantschraube DIN 912 - M4 x 0.7 x 20
 JST_B2B_XH_A
 JST_B4B_XH_A
+JST_S4B_XH_A
 JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal
 JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical
 JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical
+JST_XH_S4B-XH-A_1x04_P2.50mm_Horizontal
 K\X\F6rper1
 K\X\F6rper10
 K\X\F6rper11
@@ -221,6 +224,7 @@ R_0805_2012Metric
 R_1206_3216Metric
 R_2010_5025Metric
 Right side panel with X tower, printed PETG
+S2P-VH
 SH2_P
 SOIC-8_5.3x5.3mm_P1.27mm
 SOT-23-5
@@ -291,9 +295,7 @@ USB_C_Receptacle_16P_TopMnt_Horizontal_GCT_USB4105-xx-A
 USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal
 VSSOP-8_2.3x2mm_P0.5mm
 WDFN-8-1EP_6x5mm_P1.27mm_EP3.4x4mm
-WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm
 WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm
-WSON_8_1EP_2x2mm_P05mm_EP09x16mm
 X belt, the fixed part: ends clamped in the x_rod_clamps tooth profile and the straight runs to the idlers, drawn for x_head (they meet x_belt_loop when the x_travel slider reads 0).
 X belt, the part that rides with the head: around idler 1, over the GT2 20T motor pulley, around idler 2. Steel-reinforced GT2, 2.0 thick (teeth 0.75), 6 tall. The runs to the clamps are x_belt_runs in frame.
 X carriage plate: rod block with two bronze-bushed bores (grows with the rod), motor section with NEMA 17 slots, hammer bore, belt idlers. Origin on the top face at the hammer axis.
@@ -444,7 +446,7 @@ material property
 mechanical
 module
 motor_connector
-muscle7
+muscle8
 muscle_export_PCB
 needle
 nfc_logo_1
