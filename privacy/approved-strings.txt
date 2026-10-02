@@ -11,7 +11,6 @@
 3D
 ACME nut block for T8 lead screw, 25 x 34 x 12 mm, POM
 AO_DFN-8-1EP_5.55x5.2mm_P1.27mm_EP4.12x4.6mm
-ASSEMBLY
 AUTOMOTIVE_DESIGN { 1 0 10303 214 3 1 1 }
 Aluminium - eloxiert, gl\X\E4nzend (Grau)
 Aluminium - eloxiert, rau (Rot)
@@ -19,7 +18,6 @@ Aluminium - eloxiert, rau (Schwarz)
 Aluminium - glasperlengestrahlt
 Aluminium - satiniert
 Aluminium, Einfach
-Amass_XT30UPB-M
 Autodesk Translation Framework v15.15.0.0
 BS EN ISO 10511 - M3 Stahl 8 Einfach
 BS EN ISO 10511 - M4 Stahl 8 Einfach
@@ -32,6 +30,8 @@ Brass hub of the clamp lever; the M4 rod screws into its cross hole.
 Bronze - Patina
 CAM_OV7251_640x480
 CAM_glass_sapphire_0p4
+CAX_DC-0112-10A-AU-2.0
+CAX_DC_0112_10A_AU_2_0
 CP_Elec_8x10
 CP_Radial_D13.0mm_P5.00mm
 CP_Radial_D130mm_P500mm
@@ -98,6 +98,8 @@ Gewindestift DIN 914 - M5 x 8 Stahl 4.6 Einfach
 Glas (klar)
 Gummi - hart
 Gummi - weich
+HRO_TYPE-C-31-D-15C
+HRO_TYPE_C_31_D_15C
 HTSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP3.4x6.5mm
 Hammer solenoid cable, twisted pair, UL1007
 Hammer unit: coil housing, retainer, top cap
@@ -190,7 +192,6 @@ Moves along Y (slider joint to the layout): sled, belt clamps and the whole plat
 Muscle board on the right side plate.
 NFC_Taoglas_FXR3030B
 NFC_springs_BW0041CG
-NONE
 Nema 17 Stepper Motor
 None
 Nylon 6-6 (Wei\X\DF)
@@ -284,7 +285,6 @@ The two Y rods (steel), held in the end blocks, centred front to back.
 The two wooden handle bars between the side plates, screwed from outside.
 Threaded rod M4 x 125 mm, DIN 976, steel, zinc plated
 UQFN-12-1EP_2x2mm_P0.4mm_EP1.1x1.1mm
-USB4115-03-C
 USB4510-03-1-A
 USB4510-03-1-A_PART1
 USB_C_Receptacle_16P_TopMnt_Horizontal_GCT_USB4105-xx-A
@@ -304,7 +304,6 @@ X motor cable, 4 leads UL1007 24 AWG, JST PHR-6 to XHP-4
 X motor holder (NEMA 17), printed ASA
 X motor holder lid, printed ASA
 X rod clamps: one block per side plate holding both X rods (slit + M3 squeeze screw per rod), M5 screw to the side plate, GT2 belt-end clamp with teeth. Right clamp = mirror at the machine centre. Origin on the left side plate inner face, centred between the rods.
-XT30UPB-M
 Y belt, the fixed part: from the upper y_belt_clamp channel over the T16 motor pulley, back along the bottom, around the T16 idler and up to the lower channel. Open steel-reinforced GT2, 2.0 x 6; the ends in the clamp are y_belt_ends (y_carriage). Drawn for y_head.
 Y belt, the two ends that ride with the sled: stacked in the two y_belt_clamp channels (teeth down in the GT2 tooth floor), upper end to the motor, lower end to the idler. Steel-reinforced GT2, 2.0 x 6.
 Y drive belt, GT2 6 mm, closed loop
@@ -445,7 +444,7 @@ material property
 mechanical
 module
 motor_connector
-muscle6
+muscle7
 muscle_export_PCB
 needle
 nfc_logo_1
