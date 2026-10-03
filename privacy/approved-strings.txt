@@ -17,7 +17,6 @@ Aluminium - eloxiert, rau (Rot)
 Aluminium - eloxiert, rau (Schwarz)
 Aluminium - glasperlengestrahlt
 Aluminium - satiniert
-Aluminium, Einfach
 Autodesk Translation Framework v15.15.0.0
 BS EN ISO 10511 - M3 Stahl 8 Einfach
 BS EN ISO 10511 - M4 Stahl 8 Einfach
@@ -78,6 +77,8 @@ Display ER-TFT035-6
 Display flex cable (FPC), polyimide
 EPX 86FR (mit Carbon-3D-Druckern M2, M3, L1)
 Edelstahl - geb\X\FCrstet, gerade, lang
+Edelstahl - satiniert
+Edelstahl A2, Einfach
 Engraving needle, 3 x 17.5 mm, 90 deg point, tungsten carbide
 Engraving plate, 85 x 85 x 3 mm, r5 corners, stainless steel 316L
 Espressif_QFN-104-1EP_10x10mm_P0.35mm_EP7.5x7.5mm
@@ -114,7 +115,7 @@ Hirose_FH26_xxS_0_3SHW_2Rows_xxPins_1MP_P0_60mm_Horizontal_Parametric
 ISO 10642 - M4 x 20 Stahl 8.8 Einfach
 ISO 10642 - M5 x 20 Stahl 10.9 Schwarz
 ISO 10642 - M5 x 30 Stahl 8.8 Einfach
-ISO 14581 - M2x6 Aluminium Einfach
+ISO 14581 - M1.6x4 Edelstahl A2 Einfach
 Innensechskantschraube DIN 912 - M3 x 0.5 x 12
 Innensechskantschraube DIN 912 - M3 x 0.5 x 12 Stahl 4.6 Einfach
 Innensechskantschraube DIN 912 - M3 x 0.5 x 16
@@ -258,8 +259,8 @@ Senkkopfschraube mit Innensechskant ISO 10642 - M4 x 20 Stahl 8.8 Einfach
 Senkkopfschraube mit Innensechskant ISO 10642 - M5 x 20
 Senkkopfschraube mit Innensechskant ISO 10642 - M5 x 30
 Senkkopfschraube mit Innensechskant ISO 10642 - M5 x 30 Stahl 8.8 Einfach
-Senkkopfschraube mit Innensechsrund ISO 14581 - M2x5 Aluminium Einfach
-Senkkopfschraube mit Innensechsrund ISO 14581 - M2x6
+Senkkopfschraube mit Innensechsrund ISO 14581 - M1.6x4
+Senkkopfschraube mit Innensechsrund ISO 14581 - M1.6x4 Edelstahl A2 Einfach
 Skeleton
 Sliding bushing SF-1, 12 x 14 x 20 mm, bronze composite
 Sliding bushing SF-1, 12 x 14 x 25 mm, bronze composite
@@ -286,11 +287,14 @@ Texas_DRT-3
 Texas_RGE0024C_VQFN-24-1EP_4x4mm_P0.5mm_EP2.1x2.1mm
 Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm
 Texas_RTW_WQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm
+Texas_UQFN-10_1.5x2mm_P0.5mm
+Texas_UQFN_10_1_5x2mm_P0_5mm
 The two X rods (steel), held in the side plates, 7 mm deep each side.
 The two Y rods (steel), held in the end blocks, centred front to back.
 The two wooden handle bars between the side plates, screwed from outside.
 Threaded rod M4 x 125 mm, DIN 976, steel, zinc plated
 UQFN-12-1EP_2x2mm_P0.4mm_EP1.1x1.1mm
+UQFN-4_0.8x0.9mm_P0.4mm
 USB4510-03-1-A
 USB4510-03-1-A_PART1
 USB_C_Receptacle_16P_TopMnt_Horizontal_GCT_USB4105-xx-A
@@ -493,7 +497,7 @@ rod
 rp2350text
 seed_PCB
 seed_v4
-seed_v5_pcb_b9ececb
+seed_v4_pcb_3bd63c8
 side_plate_left
 side_plate_right
 side_plates
