@@ -22,13 +22,15 @@ Autodesk Translation Framework v15.15.0.0
 BS EN ISO 10511 - M3 Stahl 8 Einfach
 BS EN ISO 10511 - M4 Stahl 8 Einfach
 BS EN ISO 10511 - M5 Stahl 8 Einfach
+BW0041CG-L2.5W1.0H1.8
 Back block of the housing, printed PETG
 Ball bearing 608Z, 8 x 22 x 7 mm
 Beschichtung - br\X\FCniert
 Bracket for the Y motor, screwed to the back end block.
 Brass hub of the clamp lever; the M4 rod screws into its cross hole.
-CAM_OV7251_640x480
+CAM_OV7251_sample
 CAM_glass_sapphire_0p4
+CAM_pad
 CP_Elec_8x10
 CP_Radial_D13.0mm_P5.00mm
 CP_Radial_D130mm_P500mm
@@ -80,7 +82,7 @@ Engraving needle, 3 x 17.5 mm, 90 deg point, tungsten carbide
 Engraving plate, 85 x 85 x 3 mm, r5 corners, stainless steel 316L
 Espressif_QFN-104-1EP_10x10mm_P0.35mm_EP7.5x7.5mm
 FH34SRJ-24S-0.5SH
-FPC_camera_v4
+FPC_camera_v5
 Faceplate with NFC logo inlay, printed PETG
 Foot, 8 x 20 x 5 mm, TPU 85A
 Front and back end blocks (front = mirror of back): Y rod bosses with set screws, M5 nut slots for the side plate screws, Y drive mounting holes, feet.
@@ -194,7 +196,6 @@ Moves along X (slider joint to the layout): carriage with bushings, X motor and 
 Moves along Y (slider joint to the layout): sled, belt clamps and the whole plate holder with the plate.
 Muscle board on the right side plate.
 NFC_Taoglas_FXR3030B
-NFC_springs_BW0041CG
 Nema 17 Stepper Motor
 None
 Nylon 6-6 (Wei\X\DF)
@@ -245,6 +246,7 @@ Sechskantmutter DIN 6924 - M5 x 0.8 Stahl 6 Einfach
 Sechskantmutter mit Sicherungselement, niedrige Form BS EN ISO 10511 - M3
 Sechskantmutter mit Sicherungselement, niedrige Form BS EN ISO 10511 - M4
 Sechskantmutter mit Sicherungselement, niedrige Form BS EN ISO 10511 - M5
+Seed - Black glass
 Seed - Lens glass
 Seed - Lens pupil
 Seed - OLED black
@@ -349,10 +351,17 @@ bushing_right_front
 cable_clip_1x
 cable_clip_2x
 cable_clip_m3
+cam_barrel
+cam_feet
 cam_flex_neck
+cam_flex_pad
 cam_flex_stiffened_end
 cam_glass
-camera_body
+cam_holder
+cam_lens_glass
+cam_lens_pupil
+cam_pad_1p5
+cam_steel_stiffener
 carriage_plate
 center_axis
 centerpiece_lever
@@ -438,10 +447,6 @@ lead_2
 lead_3
 lead_4
 left
-lens
-lens_dome
-lens_flange
-lens_pupil
 lever
 lock
 lock_collar
@@ -488,7 +493,7 @@ rod
 rp2350text
 seed_PCB
 seed_v4
-seed_v4_pcb_r3
+seed_v5_pcb_b9ececb
 side_plate_left
 side_plate_right
 side_plates
@@ -501,8 +506,6 @@ spacer_2
 spacer_3
 spacer_4
 spacer_5
-spring_1
-spring_2
 spring_washer_8
 stiffener
 tc-33x-2
@@ -514,8 +517,8 @@ touch_stiffener
 tp_fold
 tp_strip
 tp_strip_on_wide
-v4_fpc_tail_S
-v4_fpc_tail_stiffener
+v5_fpc_tail_S
+v5_fpc_tail_stiffener
 view_area
 washer_lower
 washer_upper
