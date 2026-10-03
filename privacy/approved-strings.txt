@@ -28,7 +28,6 @@ Beschichtung - br\X\FCniert
 Bracket for the Y motor, screwed to the back end block.
 Brass hub of the clamp lever; the M4 rod screws into its cross hole.
 CAM_OV7251_sample
-CAM_glass_sapphire_0p4
 CAM_pad
 CP_Elec_8x10
 CP_Radial_D13.0mm_P5.00mm
@@ -42,7 +41,6 @@ Cable clip for one flat cable, 8 x 3.5 x 2.9 mm, printed PC/PBT
 Cable clip for two flat cables, 8 x 4.8 x 2.9 mm, printed PC/PBT
 Cable clip with M3 snap plug, 8 x 4.8 x 2.9 mm, printed PC/PBT
 Chrom
-Chrom - Schwarz
 Clamp lever (cam), 12.5 mm, printed ASA
 Clamp lever (printed) on the hub.
 Compression spring, 15 / 0.5 / 5 mm (length / wire / OD), spring steel
@@ -209,7 +207,9 @@ Plate holder (printed): pocket for the front half of the plate with an undercut 
 Plate jaw, printed PETG
 Plug JST XHP-2, nylon
 Plug JST XHP-4, nylon
+Polycarbonat, klar
 Polyimid (Kapton)
+Polykarbonat (klar)
 QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm
 QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm
 QFN-28-1EP_5x5mm_Pitch0.5mm
@@ -360,7 +360,6 @@ cam_feet
 cam_flex_neck
 cam_flex_pad
 cam_flex_stiffened_end
-cam_glass
 cam_holder
 cam_lens_glass
 cam_lens_pupil
