@@ -29,8 +29,6 @@ Bracket for the Y motor, screwed to the back end block.
 Brass hub of the clamp lever; the M4 rod screws into its cross hole.
 CAM_OV7251_640x480
 CAM_glass_sapphire_0p4
-CAX_DC-0112-10A-AU-2.0
-CAX_DC_0112_10A_AU_2_0
 CP_Elec_8x10
 CP_Radial_D13.0mm_P5.00mm
 CP_Radial_D130mm_P500mm
@@ -97,8 +95,10 @@ Gewindestift DIN 914 - M5 x 8 Stahl 4.6 Einfach
 Glas (klar)
 Gummi - hart
 Gummi - weich
-HRO_TYPE-C-31-D-15C
-HRO_TYPE_C_31_D_15C
+HC_DC-084-2.1-03A
+HC_DC_084_2_1_03A
+HRO_TYPE-C-31-D-15D
+HRO_TYPE_C_31_D_15D
 HTSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP3.4x6.5mm
 HTSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP3.4x9.5mm
 Hammer solenoid cable, twisted pair, UL1007
@@ -333,6 +333,7 @@ axis
 back
 back_plate
 bearing_608z
+board_spacers
 bobbin
 body
 bushing_1220
@@ -452,7 +453,7 @@ material property
 mechanical
 module
 motor_connector
-muscle8
+muscle9
 muscle_export_PCB
 needle
 nfc_logo_1
@@ -495,6 +496,11 @@ sled_block_left
 sled_block_right
 sled_bottom
 sled_top
+spacer_1
+spacer_2
+spacer_3
+spacer_4
+spacer_5
 spring_1
 spring_2
 spring_washer_8
