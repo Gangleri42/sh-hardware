@@ -407,6 +407,7 @@ frame
 front
 fxr_ferrite_cover
 fxr_fpc_adhesive
+fxr_fpc_vendor
 fxr_pad_1
 fxr_pad_2
 grommet
@@ -497,6 +498,7 @@ rp2350text
 seed_PCB
 seed_v4
 seed_v4_pcb_3bd63c8
+seed_v4_pcb_d35cfbd
 side_plate_left
 side_plate_right
 side_plates
@@ -523,6 +525,11 @@ tp_strip_on_wide
 v5_fpc_tail_S
 v5_fpc_tail_stiffener
 view_area
+washer_1
+washer_2
+washer_3
+washer_4
+washer_5
 washer_lower
 washer_upper
 x_axis
