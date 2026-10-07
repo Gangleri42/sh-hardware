@@ -75,6 +75,7 @@ Display ER-TFT035-6
 Display flex cable (FPC), polyimide
 EPX 86FR (mit Carbon-3D-Druckern M2, M3, L1)
 Edelstahl - geb\X\FCrstet, gerade, lang
+Edelstahl - poliert
 Edelstahl - satiniert
 Edelstahl A2, Einfach
 Engraving needle, 3 x 17.5 mm, 90 deg point, tungsten carbide
@@ -94,6 +95,7 @@ GT2 belt clamp plate (two stacked on the sled, belt in between).
 Gewindestift DIN 914 - M5 x 8
 Gewindestift DIN 914 - M5 x 8 Stahl 4.6 Einfach
 Glas (klar)
+Glass_lid
 Gummi - hart
 Gummi - weich
 HC_DC-084-2.1-03A
@@ -188,6 +190,7 @@ Left side panel with X tower, printed PETG
 Lever hub with M4 cross thread, 12 x 12.5 mm, brass
 LinearPattern003
 Lock Collar 8mm
+M1p6x4_wafer_T5_A2_ISO7092
 M4 threaded rod from the lever hub through the holder and the jaw into the knob. Length follows plate_h.
 Maximum model space distance between geometric entities at asserted connectivities
 Messing - poliert
@@ -410,6 +413,7 @@ fxr_fpc_adhesive
 fxr_fpc_vendor
 fxr_pad_1
 fxr_pad_2
+glass_lid
 grommet
 gt2_16t_idler_3mm
 gt2_16t_pulley_5mm
@@ -495,6 +499,7 @@ return_spring
 right
 rod
 rp2350text
+screw
 seed_PCB
 seed_v4
 seed_v4_pcb_3bd63c8
@@ -525,6 +530,7 @@ tp_strip_on_wide
 v5_fpc_tail_S
 v5_fpc_tail_stiffener
 view_area
+washer
 washer_1
 washer_2
 washer_3
