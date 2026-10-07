@@ -73,6 +73,7 @@ D_SOD-523
 D_SOD_523
 Display ER-TFT035-6
 Display flex cable (FPC), polyimide
+Double C clip, 3D printed PETG, black: on-edge X motor ribbon beside the hammer pair, 5.4 mm apart, 3 mm long
 EPX 86FR (mit Carbon-3D-Druckern M2, M3, L1)
 Edelstahl - geb\X\FCrstet, gerade, lang
 Edelstahl - poliert
@@ -104,6 +105,7 @@ HRO_TYPE-C-31-D-15D
 HRO_TYPE_C_31_D_15D
 HTSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP3.4x6.5mm
 HTSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP3.4x9.5mm
+Hammer solenoid cable, twisted pair UL1007, 9 mm lay, JST VHR-2N, 202 mm
 Hammer solenoid cable, twisted pair, UL1007
 Hammer unit: coil housing, retainer, top cap
 Hammer_V3P
@@ -128,11 +130,10 @@ Innensechskantschraube DIN 912 - M3 x 0.5 x 30
 Innensechskantschraube DIN 912 - M4 x 0.7 x 20
 JST_B2B_XH_A
 JST_B4B_XH_A
-JST_S4B_XH_A
 JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal
+JST_VH_B2P-VH_1x02_P3.96mm_Vertical
 JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical
 JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical
-JST_XH_S4B-XH-A_1x04_P2.50mm_Horizontal
 K\X\F6rper1
 K\X\F6rper10
 K\X\F6rper11
@@ -180,7 +181,6 @@ Kunststoff - matt (Schwarz)
 Kupfer - poliert
 L13 gray
 LCM_HX0242S008
-LED_0603_1608Metric
 L_0603_1608Metric
 L_0805_2012Metric
 L_APV_ANR3012
@@ -188,7 +188,6 @@ L_Abracon_ASPI-0425
 Left and right side plates, modelled in machine coordinates (origin = layout machine_origin).
 Left side panel with X tower, printed PETG
 Lever hub with M4 cross thread, 12 x 12.5 mm, brass
-LinearPattern003
 Lock Collar 8mm
 M1p6x4_wafer_T5_A2_ISO7092
 M4 threaded rod from the lever hub through the holder and the jaw into the knob. Length follows plate_h.
@@ -205,9 +204,11 @@ Origin
 PCB clip, printed PETG
 PCB split pin, printed PETG
 Panasonic_EVQPUL_EVQPUC
+PinSocket_1x20_P2.54mm_Vertical
 Plate holder (Y sled, upper half), printed PETG
 Plate holder (printed): pocket for the front half of the plate with an undercut lip, dovetail channel for the jaw, lever hub notch, M4 rod channel. Grows with plate_w, plate_h and y_rod_pitch.
 Plate jaw, printed PETG
+Plug JST VHR-2N, nylon
 Plug JST XHP-2, nylon
 Plug JST XHP-4, nylon
 Polycarbonat, klar
@@ -220,7 +221,6 @@ QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm
 QFN-32-1EP_5x5mm_Pitch0.5mm
 QFN-56-1EP_7x7mm_P0.4mm_EP5.6x5.6mm
 QFN-56-1EP_7x7mm_Pitch0.4mm
-RP2350_QFN60
 RP2350_QFN80
 R_0201_0603Metric
 R_0402_1005Metric
@@ -229,12 +229,12 @@ R_0805_2012Metric
 R_1206_3216Metric
 R_2010_5025Metric
 Right side panel with X tower, printed PETG
-S2P-VH
 SH2_P
 SOIC-8_5.3x5.3mm_P1.27mm
 SOT-23-5
 SOT-23-6
 SOT-323_SC-70
+SOT-363_SC-70-6
 SOT-563
 SOT-583-8
 SOT_563
@@ -281,6 +281,7 @@ Stahl 8.8, Einfach
 Static Y drive: Y rods, motor mount, Y motor and pulley, idler block and pulley, Y belt.
 Static frame: side plates, X rods, handle bars, end blocks, X rod clamps.
 Stepper motor connector JST PH 6-pin, nylon
+Stepper motor connector JST PH 6-pin, nylon, on the motor back face
 TC-33X-1_SUBSTR_ASM.stp
 TC-33X-2
 TC-33X-2.stp
@@ -302,8 +303,8 @@ USB4510-03-1-A
 USB4510-03-1-A_PART1
 USB_C_Receptacle_16P_TopMnt_Horizontal_GCT_USB4105-xx-A
 USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal
+VH3.96-2A
 VSSOP-8_2.3x2mm_P0.5mm
-WDFN-8-1EP_6x5mm_P1.27mm_EP3.4x4mm
 WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm
 X belt, the fixed part: ends clamped in the x_rod_clamps tooth profile and the straight runs to the idlers, drawn for x_head (they meet x_belt_loop when the x_travel slider reads 0).
 X belt, the part that rides with the head: around idler 1, over the GT2 20T motor pulley, around idler 2. Steel-reinforced GT2, 2.0 thick (teeth 0.75), 6 tall. The runs to the clamps are x_belt_runs in frame.
@@ -312,6 +313,7 @@ X drive belt, GT2 6 mm, closed loop
 X guide rod, 12 x 200 mm, stainless steel 1.4301
 X lead screw T8 (lead 8, 2 starts), 8 x 200 mm, stainless steel 1.4301
 X motor cable, 4 leads UL1007 24 AWG, JST PHR-6 to XHP-4
+X motor cable, flat, 4 leads UL1007 24 AWG, on edge, JST PHR-6 to XHP-4, 156 mm
 X motor holder (NEMA 17), printed ASA
 X motor holder lid, printed ASA
 X rod clamps: one block per side plate holding both X rods (slit + M3 squeeze screw per rod), M5 screw to the side plate, GT2 belt-end clamp with teeth. Right clamp = mirror at the machine centre. Origin on the left side plate inner face, centred between the rods.
@@ -322,6 +324,7 @@ Y guide rod, 12 x 200 mm, stainless steel 1.4301
 Y idler block (FDM): holds the T16 idler on an M3 axle between two 6 mm cheeks (gap 9.5 = idler 9 + 0.5; M3 clearance 3.2 left, 2.8 thread-forming right). Bolted to the front end block by two M4 countersunk screws into captive nuts (7 AF pockets, 5.5 deep). Narrowed from the GT2 30T gap of 17.5.
 Y lead screw T8 (lead 8, 2 starts), 8 x 200 mm, stainless steel 1.4301
 Y motor cable, board side, 4 leads UL1007 24 AWG
+Y motor cable, flat, 4 leads UL1007 24 AWG, JST PHR-6 to XHP-4
 Y motor cable, motor side, 4 leads UL1007 24 AWG
 Y motor holder and belt housing (NEMA 17), printed ASA
 Y sled, lower half, printed PETG
@@ -376,6 +379,7 @@ clamp_lever
 clamp_lever_hub
 clamp_rod_M4
 clampsled
+clip
 coil_housing
 coil_layer_1
 coil_layer_2
@@ -466,7 +470,7 @@ material property
 mechanical
 module
 motor_connector
-muscle10
+muscle24
 muscle_export_PCB
 needle
 nfc_logo_1
@@ -529,6 +533,7 @@ tp_strip
 tp_strip_on_wide
 v5_fpc_tail_S
 v5_fpc_tail_stiffener
+vh_plug_2
 view_area
 washer
 washer_1
@@ -550,6 +555,7 @@ x_house
 x_idler_left
 x_idler_right
 x_motor_cable
+x_motor_connector
 x_motor_holder
 x_rod
 x_rod_back
@@ -571,6 +577,7 @@ y_carriage
 y_idler_block
 y_motor_cable
 y_motor_cable_deck
+y_motor_connector
 y_motor_holder
 y_motor_mount
 y_rod
