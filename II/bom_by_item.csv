@@ -1,0 +1,53 @@
+Item,Qty,Group,Category,Standard,Material,Dimensions,Features,Finish,Color,Notes
+acme Nut,2,"0. Sled (1), 1. Headsled (1)",CNC-milled,,POM,25x34x12mm,"8mm lead, 2mm pitch, plain block without anti-backlash section",,black,Ali Express
+Back,1,3. Back (1),FDM printed,,Extrudr PETG,,"0.2mm layer, 4 perimeters, 20% honeycomb, 5 top / 4 bottom layers",,black,printed 77.1 g
+bearing,4,"2. Front (1), 3. Back (1), 4. Left (1), 5. Right (1)",Bearing (608Z),,,,,,silver,NSK Japan
+bushing headsled,4,1. Headsled (4),Bushing (SF-1 1220),,Copper Graphite,12x14x20mm,,,copper,
+bushing sled,4,0. Sled (4),Bushing (SF-1 1225),,Copper Graphite,12x14x25mm,,,copper,
+Cableclip 1x,3,7. Body (3),FDM printed,,Extrudr PC/PBT,,0.2mm layer,,black,printed 0.08 g each
+Cableclip 2x,2,7. Body (2),FDM printed,,Extrudr PC/PBT,,0.2mm layer,,black,printed 0.09 g each
+Cableclip 2x M3,1,1. Headsled (1),FDM printed,,Extrudr PC/PBT,,0.2mm layer,,black,printed 0.09 g
+centerpiece for lever,1,0. Sled (1),lathe machined,,,,M4 thread,,brass,
+compression spring,2,0. Sled (2),,,spring steel,15/0.5/5mm (L/wire/OD),,nickel plated,silver,
+Faceplate,1,6. Electronics (1),FDM printed,,Extrudr PETG,,"0.2mm layer, 4 perimeters, 20% honeycomb, 5 top / 4 bottom layers, NFC logo inlay in 2nd color",,black/neon-orange,printed 41.3 g
+Foot,4,"2. Front (2), 3. Back (2)",FDM printed,,Extrudr TPU 85A,,"0.2mm layer, 1 perimeter, 0% infill, 5 top / 4 bottom layers",,black,printed 0.46 g each
+Front,1,2. Front (1),FDM printed,,Extrudr PETG,,"0.2mm layer, 4 perimeters, 20% honeycomb, 5 top / 4 bottom layers",,black,printed 71.9 g
+Hammerhead,1,1. Headsled (1),Coil assembly,,Copper coil in steel housing,lead 16cm (13cm twisted),"M26x1 boss, carbide tip, aluminium retainer, black lead with JST XH 2-pin plug",,silver/red,specsheet on GitHub
+Headsled,1,1. Headsled (1),CNC-milled Aluminium 7075,,,,,anodized,black,
+Jaw,1,0. Sled (1),FDM printed,,Extrudr PETG,,"0.2mm layer, 4 perimeters, 20% honeycomb, 5 top / 4 bottom layers",,neon-orange,printed 29.5 g
+LCD,1,6. Electronics (1),LCD module,,,84.96x56.54x3.95mm,"model ER-TFT035IPS-6, 3.5"" IPS TFT, 320x480, capacitive touch incl. controller",,,"buydisplay.com, no ZIF connector"
+Left,1,4. Left (1),FDM printed,,Extrudr PETG,,"0.2mm layer, 4 perimeters, 20% honeycomb, 5 top / 4 bottom layers",,black,printed 218.0 g
+Lever,1,0. Sled (1),FDM printed,,Extrudr ASA,,"0.2mm layer, 4 perimeters, 20% honeycomb, 5 top / 4 bottom layers",,neon-orange,printed 5.5 g
+M3 self-locking Nut,8,"2. Front (2), 3. Back (2), 4. Left (2), 5. Right (2)",Nut,ISO 10511,,,Grade 8,black,black,
+M3x12 cyl. hex,12,"2. Front (2), 3. Back (2), 4. Left (6), 5. Right (2)",Screw,ISO4762,,,Grade 12.9,black,black,
+M3x30 cyl.hex,4,3. Back (4),Screw,ISO4762,,,Grade 12.9,black,black,
+M4 knurled Nut,1,0. Sled (1),FDM printed,,Extrudr PETG,,0.2mm layer,,black,printed 1.7 g
+M4 self-locking Nut,3,"0. Sled (1), 4. Left (2)",Nut,ISO 10511,,,Grade 8,black,black,
+M4 threaded rods,1,0. Sled (1),Threaded rod,DIN 976 Form B,steel,M4x120mm,8.8,galvanized,,
+M4x16 cyl. hex,1,1. Headsled (1),Screw,DIN 912 / ISO 4762,,,"Grade 10.9, socket head cap screw",black,black,
+M4x25 countersunk hex,2,4. Left (2),Screw,ISO 10642,,,Grade 10.9,black,black,
+M5 self-locking Nut,16,"0. Sled (6), 1. Headsled (2), 7. Body (8)",Nut,ISO 10511,,,Grade 8,black,black,
+M5x16 countersunk hex,2,0. Sled (2),Screw,ISO 10642,,,Grade 10.9,black,black,
+M5x20 countersunk hex,4,"0. Sled (2), 1. Headsled (2)",Screw,ISO 10642,,,Grade 10.9,black,black,
+M5x30 countersunk hex,10,"0. Sled (2), 7. Body (8)",Screw,ISO 10642,,,Grade 10.9,black,black,
+Nema17,2,"3. Back (1), 4. Left (1)",Stepper motor,,,,model 42DND0155B-22,,black,
+PCB,1,6. Electronics (1),PCB,,,205.3x78x1.6mm,"4 layers, ENIG",,black,JLCPCB
+PCB clip,4,6. Electronics (4),FDM printed,,Extrudr PETG,,0.2mm layer,,black,printed 0.08 g each
+PCB pimple,3,6. Electronics (3),FDM printed,,Extrudr PETG,,0.2mm layer,,black,printed 0.17 g each
+Plate,1,7. Body (1),Plate,,1.4404 316L,85x85x3mm,r=5mm corner radius,,silver,
+Pulley motor,2,"3. Back (1), 4. Left (1)",GT2,,,"5mm bore, belt Width 6mm","30 teeth, 5mm bore, belt width 6mm",anodized,natural,
+Pulley spindle,2,"0. Sled (1), 1. Headsled (1)",GT2,,,"8mm bore, belt Width 6mm","30 teeth, 8mm bore, belt width 6mm",anodized,natural,
+Right,1,5. Right (1),FDM printed,,Extrudr PETG,,"0.2mm layer, 4 perimeters, 20% honeycomb, 5 top / 4 bottom layers",,black,printed 222.4 g
+rod,4,7. Body (4),Rod,,1.4301 Stainless Steel,12 x 200mm,"ground h9, +1mm length",,silver,
+Sled bottom,1,0. Sled (1),FDM printed,,Extrudr PETG,,"0.2mm layer, 4 perimeters, 20% honeycomb, 5 top / 4 bottom layers",,black,printed 83.5 g
+Sled top,1,0. Sled (1),FDM printed,,Extrudr PETG,,"0.2mm layer, 4 perimeters, 20% honeycomb, 5 top / 4 bottom layers",,black,printed 81.8 g
+spring washer,2,7. Body (2),Spring washer,,spring steel,8x0.2mm,,,silver,SKF (mfr)
+stepper cable 15cm,1,4. Left (1),Stepper cable,,,15cm,"PHR-6 / XHP-4, UL1007 24AWG 4P",,black,
+stepper cable 20cm,1,3. Back (1),Stepper cable,,,20cm,"PHR-6 / XHP-4, UL1007 24AWG 4P",,black,
+T8 lock-nut,2,"0. Sled (1), 1. Headsled (1)",T8 lead screw,,brass,,"8mm lead, 2mm pitch",,brass,
+T8 Spindle,2,"0. Sled (1), 1. Headsled (1)",T8 lead screw,,1.4301 Stainless Steel,200mm,"8mm lead, 2mm pitch",,silver,
+x-Axis Timing Belt,1,4. Left (1),Timing belt,,,6 x 150mm,,,black,
+x-House,1,4. Left (1),FDM printed,,Extrudr ASA,,"0.2mm layer, 4 perimeters, 20% honeycomb, 5 top / 4 bottom layers",,neon-orange,printed 7.7 g
+x-Nema Holder,1,4. Left (1),FDM printed,,Extrudr ASA,,"0.2mm layer, 4 perimeters, 20% honeycomb, 5 top / 4 bottom layers",,neon-orange,printed 13.4 g
+y-Axis Timing Belt,1,3. Back (1),Timing belt,,,6 x 200mm,,,black,
+y-Nema Holder,1,3. Back (1),FDM printed,,Extrudr ASA,,"0.2mm layer, 4 perimeters, 20% honeycomb, 5 top / 4 bottom layers",,neon-orange,printed 14.5 g
